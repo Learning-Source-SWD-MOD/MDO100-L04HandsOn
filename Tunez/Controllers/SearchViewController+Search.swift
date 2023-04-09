@@ -63,7 +63,7 @@ extension SearchViewController: UISearchResultsUpdating {
 // MARK: - UISearchBar - text color
 
 public extension UISearchBar {
-	public func setTextColor(color: UIColor) {
+    func setTextColor(color: UIColor) {
 		let svs = subviews.flatMap { $0.subviews }
 		guard let tf = (svs.filter { $0 is UITextField }).first as? UITextField else { return }
 		tf.textColor = color
